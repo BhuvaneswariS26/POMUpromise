@@ -18,7 +18,7 @@ public class TC1_CreatingUpromiseId extends ProjectMethods{
 		dataSheetName="TC1_CreateId";
 	}
 	@Test(dataProvider="fetchData")
-	public void loginAndLogout(String firstName,String lastName,String email,String passWord,String secQn,String secAns,String dob,String address,String zip,String city,String state ) {
+	public void CreateUpromiseId(String firstName,String lastName,String email,String passWord,String secQn,String secAns,String dob,String address,String zip,String city,String state,String fName,String lName,String age ) {
 		
 		new SignupPage()
 		.enterFirstName(firstName)
@@ -34,7 +34,12 @@ public class TC1_CreatingUpromiseId extends ProjectMethods{
 		.enterAddressLine1(address)
 		.enterZip(zip)
 		.enterCity(city)
-		.selectState(state);		
+		.selectState(state)
+		.clickRelation()
+		.enterBeneFName(fName)
+		.enterBeneLName(lName)
+		.enterbeneAge(age)
+		.clickbtnSubmit();
 	}
 
 }

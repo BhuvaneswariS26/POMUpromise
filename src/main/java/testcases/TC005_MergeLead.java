@@ -30,15 +30,15 @@ public class TC005_MergeLead extends ProjectMethods{
 		.clickLeads()
 		.clickMergeLead()
 		.clickFromLead()
-		.switchToWindow(1)
-		.enterLeadId(fromleadId)
+		.switchToWindow(1);
+		/*.enterLeadId(fromleadId)
 		.clickMergeFindLeadbutton()
 		.clickMergeLeadIdlink()
 		.clickToLead()
 		.enterLeadId(toLeadId)
 		.clickMergeFindLeadbutton()
 		.clickMergeLeadIdlink()
-		.clickMergeLead();
+		.clickMergeLead();*/
 		
 		
 		

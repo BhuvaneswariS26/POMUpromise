@@ -93,5 +93,45 @@ public class CreateLogin extends ProjectMethods {
 			public CreateLogin selectState(String data) {
 				selectDropDownUsingText(eleState, data);
 				return this;
+			}
+				
+				@FindBy(how=How.LINK_TEXT,using="My Child")
+				private WebElement eleRelationship;
+				
+				public CreateLogin clickRelation() {
+				click(eleRelationship);
+					return this;	
 					}
+				@FindBy(how=How.ID,using="beneFirstName")
+				private WebElement elebeneFirstName;
+				
+				public CreateLogin enterBeneFName(String data) {
+				type(elebeneFirstName,data);
+					return this;	
+					}
+				
+				@FindBy(how=How.ID,using="beneLastName")
+				private WebElement elebeneLastName;
+				
+				public CreateLogin enterBeneLName(String data) {
+				type(elebeneLastName,data);
+					return this;	
+					}
+				@FindBy(how=How.ID,using="beneAge")
+				private WebElement elebeneAge;
+				
+				public CreateLogin enterbeneAge(String data) {
+				type(elebeneAge,data);
+					return this;	
+					}
+				@FindBy(how=How.ID,using="btnSubmitLef")
+				private WebElement elebtnSubmit;
+				
+				public CreateLogin clickbtnSubmit() {
+				click(elebtnSubmit);
+					return this;	
+					}
+				
+				
+				
 }

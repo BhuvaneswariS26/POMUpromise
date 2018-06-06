@@ -8,6 +8,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 //import org.testng.annotations.DataProvider;
 //import utils.DataInputProvider;
+import org.testng.annotations.DataProvider;
+
+import utils.DataInputProvider;
 
 public class ProjectMethods extends SeMethods{
 
@@ -41,16 +44,15 @@ public class ProjectMethods extends SeMethods{
 	public void afterTest(){
 	}
 
-	@AfterMethod
+	/*@AfterMethod
 	public void afterMethod(){
 		closeAllBrowsers();
+	}*/
 
-	}
-
-/*	@DataProvider(name="fetchData")
+	@DataProvider(name="fetchData")
 	public  Object[][] getData(){
 		return DataInputProvider.getSheet(dataSheetName);		
-	}	*/
+	}	
 
 }
 
